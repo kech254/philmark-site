@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Philmark Comp Services | A Home of Innovations, Kangundo Road, Nairobi</title>
+<meta name="description" content="Printing, scanning, internet access, computer help, software and CCTV on Mowlem, Kangundo Road, Nairobi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <!-- REPLACE logo.png with your logo file name -->
+      <img src="logo.png" alt="Philmark Comp Services logo">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#why">Why us</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="status" id="status"><span class="dot"></span><span id="status-text">See opening hours below</span></p>
+      <h1>Everything tech, under one roof.</h1>
+      <p class="lead">Printing, scanning, internet, computer help, software and CCTV, on Mowlem along Kangundo Road, near Mama Lucy Hospital.</p>
+      <div class="actions">
+        <a class="btn btn-wa" href="https://wa.me/254720100730" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+254720100730">Call now</a>
+        <a class="link-light" href="#visit">Get directions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="services">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <ul class="services">
+        <li><span class="ico">💻</span><h3>Computer services</h3><p>Help for everyday work, from typing and document preparation to setup and basic fixes.</p></li>
+        <li><span class="ico">🖨️</span><h3>Printing and scanning</h3><p>Fast, clear printing and scanning for documents, forms and certificates.</p></li>
+        <li><span class="ico">🌐</span><h3>Internet access</h3><p>Fast, reliable internet for browsing, online applications, research and communication.</p></li>
+        <li><span class="ico">🧩</span><h3>Software solutions</h3><p>Help choosing, installing and using the software you need for work or study.</p></li>
+        <li><span class="ico">🎧</span><h3>Tech support and training</h3><p>Practical support and training to help you use computers and digital tools with confidence.</p></li>
+        <li><span class="ico">📹</span><h3>CCTV solutions</h3><p>Security camera solutions for homes and businesses.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block why" id="why">
+    <div class="wrap">
+      <h2>Why people come back</h2>
+      <div class="why-grid">
+        <div><h3>🤝 Reliable service</h3><p>Dependable service you can count on, every time.</p></div>
+        <div><h3>🏅 Professional support</h3><p>A clean, professional and customer-friendly environment.</p></div>
+        <div><h3>💡 Modern solutions</h3><p>Fast service and high-quality equipment to get your work done.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="visit">
+    <div class="wrap">
+      <h2>Visit us</h2>
+      <div class="visit-grid">
+        <div>
+          <p>Mowlem, along Kangundo Road, near Mama Lucy Hospital, Nairobi.</p>
+          <dl class="hours">
+            <div data-days="1,2,3,4,5"><dt>Monday to Friday</dt><dd>8:30 am – 6:00 pm</dd></div>
+            <div data-days="6"><dt>Saturday</dt><dd>9:00 am – 2:00 pm</dd></div>
+            <div data-days="0"><dt>Sunday</dt><dd>Closed</dd></div>
+          </dl>
+          <a href="https://www.google.com/maps/search/?api=1&query=Mowlem+Kangundo+Road+Nairobi" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+        <iframe class="map" title="Map of Mowlem, Kangundo Road, Nairobi" loading="lazy"
+          src="https://www.google.com/maps?q=Mowlem+Kangundo+Road+Nairobi&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Talk to us</h2>
+    <ul>
+      <li>📞 Call: <a href="tel:+254720100730">+254 720 100730</a></li>
+      <li>✉️ Email: <a href="mailto:philmarkcomp2026@gmail.com">philmarkcomp2026@gmail.com</a></li>
+      <!-- REPLACE the link below with your Facebook page address -->
+      <li>📘 Facebook: <a href="https://www.facebook.com/" target="_blank" rel="noopener">Philmark Computer Services</a></li>
+    </ul>
+    <a class="btn btn-wa" href="https://wa.me/254720100730" target="_blank" rel="noopener">Chat with us on WhatsApp</a>
+    <p class="foot">© 2026 Philmark Comp Services. A Home of Innovations.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var hrs = {0: null, 1: [510, 1080], 2: [510, 1080], 3: [510, 1080], 4: [510, 1080], 5: [510, 1080], 6: [540, 840]};
+  var names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  function fmt(m) {
+    var h = Math.floor(m / 60), mm = m % 60;
+    return (h % 12 || 12) + ':' + (mm < 10 ? '0' : '') + mm + (h < 12 ? ' am' : ' pm');
+  }
+  var parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Africa/Nairobi', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23'
+  }).formatToParts(new Date());
+  function get(type) { return parts.find(function (x) { return x.type === type; }).value; }
+  var day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(get('weekday').slice(0, 3));
+  var t = parseInt(get('hour'), 10) * 60 + parseInt(get('minute'), 10);
+  var today = hrs[day], open = false, msg = '';
+  if (today && t >= today[0] && t < today[1]) {
+    open = true;
+    msg = 'Open now, closes ' + fmt(today[1]);
+  } else {
+    for (var i = 0; i < 8; i++) {
+      var d = (day + i) % 7, h = hrs[d];
+      if (h && (i > 0 || t < h[0])) {
+        msg = 'Closed now, opens ' + (i === 0 ? 'today' : i === 1 ? 'tomorrow' : names[d]) + ' at ' + fmt(h[0]);
+        break;
+      }
+    }
+  }
+  document.getElementById('status-text').textContent = msg;
+  document.getElementById('status').classList.add(open ? 'open' : 'closed');
+  document.querySelectorAll('[data-days]').forEach(function (row) {
+    if (row.dataset.days.split(',').indexOf(String(day)) > -1) row.classList.add('today');
+  });
+})();
+</script>
+</body>
+</html>
