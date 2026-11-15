@@ -28,7 +28,7 @@ h1, h2, h3 {
 }
 
 .wrap { width: min(1080px, 100% - 40px); margin-inline: auto; }
-section[id], footer[id] { scroll-margin-top: 84px; }
+section[id], footer[id] { scroll-margin-top: 100px; }
 a { color: var(--navy); }
 :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 
