@@ -206,3 +206,23 @@ a { color: var(--navy); }
   .status.open .dot { animation: none; }
 }
 .services li { align-content: start; }
+/* Hover effects: only on devices with a mouse, and not if the visitor prefers less motion */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .btn,
+  .nav a,
+  .services .ico,
+  .services h3,
+  .why-grid > div {
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  }
+
+  .services li:hover .ico { transform: scale(1.2); }
+  .services li:hover h3 { color: #1558c0; }
+
+  .why-grid > div:hover { transform: translateY(-4px); }
+}
